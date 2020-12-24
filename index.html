@@ -1,108 +1,124 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
-    <title>Тортики і тістечка</title>
+    <link rel="stylesheet" href="style-responsive.css">
+
+
+    <title>Landing Page</title>
 </head>
 
 <body>
     <header>
-        <h1>Тортики <span>&</span> Тістечка</h1>
+        <div class="nav">
+            <a href="#" id="start-bootstrap">Start Bootstrap</a>
+            <a href="#" class="btn">Sign In</a>
+        </div>
+        <h1>Build a landing page for your business or project and generate more leads!</h1>
+        <div class="sign-up">
+            <input type="email" name="email" placeholder="Enter your email...">
+            <input type="submit" value="Sign up!" class="btn">
+        </div>
     </header>
-    <aside>
-        <label for="cCal" id="labelCal">Калорії у порції</label>
-        <input type="range" name="cCal" id="cCal" min="0" max="600">
-        <span style="font-size: 1.5em; margin: 10px 0;">Від 0 до 600 кКал</span>
-
-        <label for="cake" class="labelFilter">Торти</label>
-        <label for="pie" class="labelFilter">Пироги</label>
-        <label for="roll" class="labelFilter">Рулети</label>
-        <label for="pastry" class="labelFilter">Тістечка</label>
-        <label for="cheesecakes" class="labelFilter">Сирники</label>
-        <label for="default" class="labelFilter">Скинути фільтр</label>
-    </aside>
     <main>
-        <input type="radio" name="filter" id="cake">
-        <input type="radio" name="filter" id="pie">
-        <input type="radio" name="filter" id="roll">
-        <input type="radio" name="filter" id="pastry">
-        <input type="radio" name="filter" id="cheesecakes">
-        <input type="radio" name="filter" id="default">
+        <div class="features">
+            <div>
+                <img src="/images/desktop.png" alt="icon">
+                <h2>Fully Responsive</h2>
+                <p>This theme will look great on any device, no matter the size!</p>
+            </div>
+            <div>
+                <img src="/images/features.png" alt="icon">
+                <h2>Bootstrap 4 Ready</h2>
+                <p>This theme will look great on any device, no matter the size!</p>
+            </div>
+            <div>
+                <img src="/images/ready_to_use.png" alt="icon">
+                <h2>Easy to Use</h2>
+                <p>Ready to use with your own content, or customize the source files!</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-info" id="info1">
+                <h2>Fully Responsive Design</h2>
+                <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                    device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            </div>
+            <div id="bg1"></div>
+            <div class="content-info" id="info2">
+                <h2>Updated For Bootstrap 4</h2>
+                <p>Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile
+                    responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            </div>
+            <div id="bg2"></div>
+            <div class="content-info" id="info3">
+                <h2>Easy to Use & Customize</h2>
+                <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
+                    customization options. Out of the box, just add your content and images, and your new landing
+                    page
+                    will be ready to go!</p>
+            </div>
+            <div id="bg3"></div>
+        </div>
 
-        <div class="recipe cake">
-            <div class="top">
-                <img src="/images/cake1.jpg" alt="Cake">
-                <p class="cakeName">Торт: <b>Торт</b></p>
+        <div class="response">
+            <h2>What people are saying...</h2>
+            <div class="people">
+                <div>
+                    <img src="/images/testimonials-1.jpg" alt="person">
+                    <h3>Margaret E.</h3>
+                    <p>"This is fantastic! Thanks so much guys!"</p>
+                </div>
+                <div>
+                    <img src="/images/testimonials-2.jpg" alt="person">
+                    <h3>Fred S.</h3>
+                    <p>"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+                </div>
+                <div>
+                    <img src="/images/testimonials-3.jpg" alt="person">
+                    <h3>Sarah W.</h3>
+                    <p>"Thanks so much for making these free resources available to us!"</p>
+                </div>
             </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe roll">
-            <div class="top">
-                <img src="/images/roll.jpg" alt="Cake">
-                <p class="cakeName">Рулет: <b>Рулет</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe pastry">
-            <div class="top">
-                <img src="/images/pastry2.jpg" alt="Cake">
-                <p class="cakeName">Тістечко: <b>Тістечко</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe cake">
-            <div class="top">
-                <img src="/images/cake2.jpg" alt="Cake">
-                <p class="cakeName">Торт: <b>Торт</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe cheesecakes">
-            <div class="top">
-                <img src="/images/cheesecakes.jpg" alt="Cake">
-                <p class="cakeName">Сирники: <b>Сирники</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe pastry">
-            <div class="top">
-                <img src="/images/pastry1.jpg" alt="Cake">
-                <p class="cakeName">Тістечко: <b>Тістечко</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe cake">
-            <div class="top">
-                <img src="/images/cake4.jpg" alt="Cake">
-                <p class="cakeName">Торт: <b>Торт</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe pie">
-            <div class="top">
-                <img src="/images/pie.jpg" alt="Cake">
-                <p class="cakeName">Пиріг: <b>Пиріг</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
-        </div>
-        <div class="recipe cake">
-            <div class="top">
-                <img src="/images/cake3.jpg" alt="Cake">
-                <p class="cakeName">Торт: <b>Торт</b></p>
-            </div>
-            <p class="ccal">Калорії у порції: 300кКал</p>
         </div>
     </main>
     <footer>
-        <div>
-            Контакти:
-            <a href="https://gmail.com" target="_blank">tortik@smakota.ua</a>
+        <div class="footer-sign-up">
+            <h1>Ready to get started? Sign up now!</h1>
+            <div class="sign-up">
+                <input type="email" name="email" placeholder="Enter your email...">
+                <input type="submit" value="Sign up!" class="btn">
+            </div>
         </div>
-        <div>
-            Ⓒ 2019 Smakota
+        <div class="info-credit">
+            <div class="info">
+                <div class="info-a">
+                    <a href="#">About</a>
+                    <span>&#183;</span>
+                    <a href="#">Contact</a>
+                    <span>&#183;</span>
+                    <a href="#">Terms of Use</a>
+                    <span>&#183;</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="credit">
+                    © Your Website 2020. All Rights Reserved.
+                </div>
+            </div>
+            <div class="accounts">
+                <a href="#"><img src="/images/facebook.png" alt="icon"></a>
+                <a href="#"><img src="/images/twitter.png" alt="icon"></a>
+                <a href="#"><img src="/images/instagram.png" alt="icon"></a>
+            </div>
         </div>
     </footer>
 </body>

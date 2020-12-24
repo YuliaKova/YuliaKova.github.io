@@ -1,0 +1,99 @@
+@media (max-width:991px) {
+    header {
+        height: 800px;
+        background-size: 100% 100%;
+    }
+    [type="email"] {
+        width: 50%;
+    }
+    .features {
+        flex-direction: column;
+        padding: 150px 0;
+    }
+    .features div {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .content {
+        grid-template-areas: "i1" "t1" "i2" "t2" "i3" "t3";
+    }
+    #bg1, #bg2, #bg3 {
+        height: 500px;
+    }
+    .content-info {
+        height: 400px;
+        margin: auto 50px;
+    }
+    .content-info h2, .content-info p {
+        width: 80%;
+    }
+    .people {
+        flex-direction: column;
+    }
+    .response {
+        height: 1200px;
+    }
+    .info-credit {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 250px;
+    }
+    .info-credit * {
+        margin: 6px;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        height: 570px;
+    }
+    header h1 {
+        font-size: 3.3em;
+        margin: auto 5% 0;
+    }
+    [type="email"], [type="submit"]{
+        width: 80%;
+        box-sizing: border-box;
+    }
+    [type="email"]{
+        border: 4px solid transparent;
+    }
+    header .sign-up, .footer-sign-up .sign-up{
+        flex-wrap: wrap;
+    }
+    .content-info h2, .content-info p {
+        width: 90%;
+    }
+    .content-info {
+        height: max-content;
+        margin: 40px;
+    }
+    .features div {
+        width: 60%;
+    }
+    #start-bootstrap {
+        font-size: 2em;
+        margin: 10px 0 10px 13%;
+    }
+    .nav .btn {
+        margin: auto 13% auto 0;
+    }
+    #bg1, #bg2, #bg3 {
+        height: 500px;
+    }
+    .response h2 {
+        font-size: 2.5em;
+        margin: 5px;
+    }
+    .footer-sign-up h1 {
+        font-size: 3em;
+        margin: 5px;
+        width: 80%;
+        text-align: center;
+    }
+    .info-a {
+        margin: 10px;
+    }
+}
